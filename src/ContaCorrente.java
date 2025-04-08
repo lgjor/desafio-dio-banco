@@ -1,5 +1,10 @@
 public class ContaCorrente extends Conta {
     
+    // Construtor
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
+    }
+    
     // Métodos
     @Override
     public void imprimirExtrato() {
