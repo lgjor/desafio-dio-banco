@@ -1,12 +1,9 @@
-public class ContaPoupanca {
-
-    // Atributos
-    public int agencia;
-    public int numero;
-    public double saldo;
+public class ContaPoupanca extends Conta {
 
     // Métodos
-    public void sacar(){}
-    public void depositar(){}
-    public void transferir(){}
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("=== Extrato Conta Poupança ===");
+        super.imprimirInfosDaConta();
+    }
 }

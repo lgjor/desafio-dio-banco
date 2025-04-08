@@ -1,6 +1,11 @@
 public class Cliente {
 
     // Atributos
-    public String nome;
+    private String nome;
+
+    // Getter
+    public String getNome() {
+        return nome;
+    }
 
 }

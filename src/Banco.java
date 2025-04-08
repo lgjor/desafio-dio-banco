@@ -1,5 +1,11 @@
 public class Banco {
 
     // Atributos
-    public String nome;
+    private String nome;
+
+    // Getters
+
+    public String getNome() {
+        return this.nome;
+    }
 }

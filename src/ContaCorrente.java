@@ -1,13 +1,12 @@
-public class ContaCorrente {
-
-    // Atributos
-    public int agencia;
-    public int numero;
-    public double saldo;
-
+public class ContaCorrente extends Conta {
+    private double limite;
+    
     // Métodos
-    public void sacar(){}
-    public void depositar(){}
-    public void transferir(){}
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("=== Extrato Conta Corrente ===");
+        super.imprimirInfosDaConta();
+    }
+
 
 }
