@@ -1,7 +1,7 @@
 public abstract class Conta implements IConta {
 
     private static final int AGENCIA_PADRAO = 1;
-    private static int SEQUENCIAL = 1001;
+    private static int SEQUENCIAL = 1;
 
     // Atributos
     protected int agencia;
@@ -45,8 +45,8 @@ public abstract class Conta implements IConta {
     // Métodos
 
     protected void imprimirInfosDaConta(){
-        System.out.println(String.format("Agência: %d", this.getAgencia()));
+        System.out.println(String.format("Agência: %04d", this.getAgencia()));
         System.out.println(String.format("Número: %d", this.getNumero()));
-        System.out.println(String.format("Número: %f", this.getSaldo()));
+        System.out.println(String.format("Saldo: %.2f", this.getSaldo()));
     }
 }
