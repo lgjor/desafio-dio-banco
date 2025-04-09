@@ -63,6 +63,8 @@ Foram implementados os métodos:
 
 ## Pilares da POO
 
+A resolução desse desafio exercitou pilares da orientação a objetos.
+
 ### Abstração
 
 Habilidade de concentrar-se nos aspectos essenciais de um domínio, ignorando características menos importantes ou acidentais.
