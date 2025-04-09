@@ -20,6 +20,46 @@ Ambas as contas possuem as seguintes funcionalidade:
 - Noções básicas de java e orientações a objeto
 - Noções básicas de git e github.
 
+## Implementação
+
+Para implementar esse projeto criei o seguinte diagrama UML:
+
+<img src=".github/img/uml-bancodigital.png" alt="Diagrama UML do projeto">
+
+Interface
+
+- IConta
+
+Classe abstrata:
+
+- Conta
+  - Implementa IConta
+
+Classes:
+
+- Banco
+- Agencia
+- Cliente
+- ContaCorrente
+  - Extende de conta
+- ContaPoupanca
+  - Extende de conta
+
+Sendo que o Banco é responsável por gerenciar as agências.
+As agências são responsáveis por gerenciar os clientes e as contas.
+Ambas as classes conta poupança e conta corrente são subclasses da classe conta, que implementa a interface IConta.
+
+Foram implementados os métodos:
+    - sacar
+    - depositar
+    - transferir
+    - imprimirExtrato
+    - Listar Clientes
+    - Listar Agências
+    - Buscar conta
+    - Buscar Agência
+    - Buscar Cliente
+
 ## Pilares da POO
 
 ### Abstração
@@ -39,6 +79,8 @@ Permite que você defina uma classe filha que reutiliza (herda), estende ou modi
 Capacidade de um objeto poder ser referenciado de várias formas. Ou seja, a capacidade de tratar os objetos criados a partir das classes específicas como objetos de uma classe genérica.
 
 Cuidado: O polimorfismo não quer dizer que o objeto fica se transformando, muito pelo contrário, um objeto nasce de um tipo e morre daquele tipo, o que pode mudar é a maneira como nos referenciamos a ele.
+
+
 
 ## Folder Structure
 
